@@ -1,24 +1,25 @@
 package master.demos.customer_application_service.requests;
-
-import master.demos.customer_application_service.VehiclePerformanceRange;
+import master.demos.customer_application_service.util.enums.*;
 
 public record CarInsuranceContractRequest(
-        String brand,
-        String model,
-        String modelSeries,
-        String fuelType,
-        String vehicleCategory,
-        VehiclePerformanceRange performanceRange,
-        String insuranceBeginn,
+       int policyHolderAge,
 
-        String policyHolderFirstname,
+       Gender gender,
 
-        String policyHolderLastname,
+       int policyHolderDrivingExperience,
 
-        String policyHolderAge,
+       CarType carType,
 
-        String policyHolderAddress,
+       int carAge,
 
-        String policyHolderGender,
+       int carEnginePerformance,
+
+       SafetyEquipment safetyEquipment,
+
+       int carKilometerPerYear,
+
+       UsageType usageType,
+
+       ResidenceType residenceType
 ) {
 }

@@ -1,0 +1,5 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: customer_application_service
