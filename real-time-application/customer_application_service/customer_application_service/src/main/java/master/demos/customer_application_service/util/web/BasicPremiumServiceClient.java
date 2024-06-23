@@ -16,7 +16,7 @@ public class BasicPremiumServiceClient {
 
     public CarInsuranceBasicPremiumResponse getBasicPermium(CarInsuranceBasicPermiumRequestDTO request){
         return client.post()
-                .uri("/getBasicPermium")
+                .uri("http://localhost:8082/getBasicPermium")
                 .bodyValue(request)
                 .retrieve()
                 .bodyToMono(CarInsuranceBasicPremiumResponse.class)

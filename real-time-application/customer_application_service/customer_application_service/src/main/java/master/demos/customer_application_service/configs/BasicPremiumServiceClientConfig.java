@@ -11,8 +11,6 @@ public class BasicPremiumServiceClientConfig {
 
     @Bean
     public WebClient client(WebClient.Builder builder){
-        return builder
-                .baseUrl("http://localhost:8082")
-                .build();
+        return builder.build();
     }
 }
